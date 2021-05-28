@@ -1,0 +1,109 @@
+/* latin-ext */
+@font-face {
+  font-family: 'Ranchers';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ranchers'), local('Ranchers-Regular'), url('./sources/zrfm0H3Lx-P2Xvs2ArDRBi_NXQ.woff2') format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Ranchers';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ranchers'), local('Ranchers-Regular'), url('./sources/zrfm0H3Lx-P2Xvs2ArDfBi8.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Ranchers', sans-serif;
+}
+
+body {
+  background-image: url("./img/snowmountain.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  user-select: none;
+}
+
+.label-death {
+  display: none;
+  z-index: 10;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 10rem;
+  color: white;
+}
+.label-death.active {
+  display: block;
+}
+
+.label-death-bg {
+  content: " ";
+  z-index: 9;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 20rem;
+  transform: translate(-50%, -50%);
+  transition: all 2s ease;
+  background-color: black;
+  opacity: 0.7;
+}
+.label-death-bg.active {
+  top: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.label-score {
+  z-index: 10;
+  position: absolute;
+  left: 5vw;
+  bottom: 5vh;
+  font-size: 10rem;
+  transition: all 500ms ease;
+  color: black;
+}
+.label-score.stopped {
+  top: 50%;
+  left: 50%;
+  bottom: auto;
+  font-size: 15rem;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.label-restart {
+  display: none;
+  z-index: 100;
+  position: absolute;
+  padding: 1rem 2rem;
+  top: 75%;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 5rem;
+  color: white;
+  transform: translate(-50%, -50%);
+}
+.label-restart.active {
+  display: block;
+}

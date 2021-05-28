@@ -1,0 +1,7 @@
+quotes :https://www.azquotes.com/quotes/topics/extreme-sports.html
+images :
+        background:
+                https://wallpaperaccess.com/snow-skiing
+        helmet: https://www.thesnowcentre.com/snowsure/news/do-i-need-a-ski-helmet
+game   :https://www.17sucai.com/pins/36232.html
+text   :https://adventure.howstuffworks.com/outdoor-activities/snow-sports/extreme-skiing.htm
